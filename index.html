@@ -173,8 +173,15 @@ button:hover {
   border: 1px solid #593a3d;
   padding: 25px;
   position: relative;
-  animation: appear .5s ease;
   border-radius: 4px;
+
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 200px;
+
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 @keyframes appear {
@@ -193,6 +200,7 @@ button:hover {
   line-height: 1.8;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+  word-break: normal;
   margin: 18px 0;
 }
 

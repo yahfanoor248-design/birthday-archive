@@ -196,11 +196,27 @@ button:hover {
   color: #e3d0c3;
   line-height: 1.8;
   margin: 18px 0;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: pre-wrap;
   overflow-wrap: anywhere;
+  padding-right: 8px;
+}
+
+/* Custom scrollbar */
+.wish .message::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wish .message::-webkit-scrollbar-thumb {
+  background: #8b5960;
+  border-radius: 10px;
+}
+
+.wish .message::-webkit-scrollbar-track {
+  background: #211417;
 }
 
 .wish .date {

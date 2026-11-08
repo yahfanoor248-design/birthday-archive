@@ -174,14 +174,11 @@ button:hover {
   padding: 25px;
   position: relative;
   border-radius: 4px;
-
   width: 100%;
-  min-width: 0;
-  height: auto;
-  min-height: 200px;
-
-  overflow-wrap: anywhere;
-  word-break: normal;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes appear {
@@ -198,10 +195,12 @@ button:hover {
 .wish .message {
   color: #e3d0c3;
   line-height: 1.8;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-  word-break: normal;
   margin: 18px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow-wrap: anywhere;
 }
 
 .wish .date {
